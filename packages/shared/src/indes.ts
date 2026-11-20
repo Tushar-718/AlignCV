@@ -1,0 +1,10 @@
+export const APP_NAME = "AlignCV";
+
+export const LIMITS = {
+  PDF_MAX_BYTES: 2 * 1024 * 1024,
+  PDF_MAX_PAGES: 3,
+  EXTRACTED_TEXT_MAX_CHARS: 20_000,
+  JD_MAX_CHARS: 10_000,
+  BASE_RESUMES_PER_USER: 5,
+  TAILORED_RESUMES_PER_USER: 50,
+} as const;
