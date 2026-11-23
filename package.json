@@ -1,6 +1,7 @@
 {
   "name": "aligncv",
   "private": true,
+  "packageManager": "pnpm@12.21.0",
   "scripts": {
     "dev": "pnpm --parallel --filter \"./apps/*\" dev",
     "build": "pnpm -r build",
