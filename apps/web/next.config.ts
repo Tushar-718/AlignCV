@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
   // packages/shared exports raw TypeScript, so Next must compile it.
   transpilePackages: ["@aligncv/shared"],
   // Proxy /api/* to Express so auth cookies are first-party (same origin as the site).
-  async rewrites() {
-    return [{ source: "/api/:path*", destination: `${apiUrl}/api/:path*` }];
+  rewrites() {
+    return Promise.resolve([{ source: "/api/:path*", destination: `${apiUrl}/api/:path*` }]);
   },
 };
 
