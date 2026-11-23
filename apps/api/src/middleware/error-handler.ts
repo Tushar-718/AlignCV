@@ -9,7 +9,11 @@ export const notFoundHandler: RequestHandler = (_req, _res, next) => {
 export const errorHandler: ErrorRequestHandler = (err, req, res, _next) => {
   if (err instanceof AppError) {
     res.status(err.status).json({
-      error: { code: err.code, message: err.message, ...(err.details !== undefined && { details: err.details }) },
+      error: {
+        code: err.code,
+        message: err.message,
+        ...(err.details !== undefined && { details: err.details }),
+      },
     });
     return;
   }

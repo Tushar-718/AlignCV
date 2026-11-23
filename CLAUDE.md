@@ -65,4 +65,6 @@ job hunt, and the live demo URL goes on the owner's resume, so it must always wo
 - TODO: start local Postgres and Redis (docker compose)
 - TODO: generate a migration / apply migrations (drizzle-kit)
 - TODO: run a single test file
-- TODO: lint and format
+- `pnpm lint` / `pnpm lint:fix`: ESLint across the repo (one root `eslint.config.mjs`)
+- `pnpm format` / `pnpm format:check`: Prettier (docs/, CLAUDE.md and .claude/ are ignored)
+- Git hooks (Husky): pre-commit runs lint-staged; commit-msg runs commitlint

@@ -1,0 +1,10 @@
+pnpm-lock.yaml
+**/dist
+**/.next
+**/coverage
+**/next-env.d.ts
+
+# Hand-written docs: the plan is the source of truth and is only edited with approval.
+docs/
+CLAUDE.md
+.claude/
